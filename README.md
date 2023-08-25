@@ -13,6 +13,6 @@ Cadastro de clientes
 
 Visualização das viaturas disponíveis para aluguer (Com mais detalhes) 
 Visualização dos planos disponíveis (semanal e mensal)
-Possibilidade de aluguer de viatura
+Possibilidade de aluguel de viatura
 Resumo sobre a empresa
 Perfil do utilizador (Login, palavra-passe e informações adicionais no registo de cliente)
