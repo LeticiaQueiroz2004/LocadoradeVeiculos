@@ -8,6 +8,7 @@ Visualização dos veículos disponíveis para locação (sem detalhes)
 Visualização dos planos disponíveis (semanal e mensal) 
 Resumo sobre a empresa 
 Cadastro de clientes
+Tela de vantagens de veículos elétricos
 
 ### ÁREA LOGADA
 
