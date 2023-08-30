@@ -13,9 +13,10 @@ Cadastro de clientes
 
 Visualização das viaturas disponíveis para aluguer (Com mais detalhes) 
 Visualização dos planos disponíveis (semanal e mensal)
-Possibilidade de aluguer de viatura
+Possibilidade de aluguel de viatura
 Resumo sobre a empresa
 Perfil do utilizador (Login, palavra-passe e informações adicionais no registo de cliente)
+<<<<<<< HEAD
 
 
 PROTOTIPAÇÕES
@@ -25,3 +26,5 @@ TELA HOME
 
 TELA DE VEÍCULOS
 ![](Imagens/Explorar%20-%20Locadora%20de%20Veículos.jpg)
+=======
+>>>>>>> ef771a7e1aa679eaff9f6fa4cc134bee673e7061
