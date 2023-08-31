@@ -27,5 +27,11 @@ Perfil do utilizador (Login, palavra-passe e informações adicionais no registo
 
 ### TELA DE VEÍCULOS
 ![](Imagens/Explorar%20-%20Locadora%20de%20Veículos.jpg)
+
+### TELA DE LOGIN
+![](Imagens/Tela%20Login%20-%20Locadora%20de%20Veículos%20(1).jpg)
+
+### TELA DE CADASTRO
+![](Imagens/Tela%20Cadastro.jpg)
 =======
 >>>>>>> ef771a7e1aa679eaff9f6fa4cc134bee673e7061
