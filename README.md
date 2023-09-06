@@ -33,5 +33,10 @@ Perfil do utilizador (Login, palavra-passe e informações adicionais no registo
 
 ### TELA DE CADASTRO
 ![](Imagens/Tela%20Cadastro.jpg)
-=======
+
+### TELA DE VANTAGENS
+![](Imagens/Tela%20de%20Vantagens.jpg)
+
+### TELA DE ALUGUEL
+![](Imagens/Tela%20de%20Aluguel.jpg)=======
 >>>>>>> ef771a7e1aa679eaff9f6fa4cc134bee673e7061
