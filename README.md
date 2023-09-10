@@ -38,5 +38,14 @@ Perfil do utilizador (Login, palavra-passe e informações adicionais no registo
 ![](Imagens/Tela%20de%20Vantagens.jpg)
 
 ### TELA DE ALUGUEL
-![](Imagens/Tela%20de%20Aluguel.jpg)=======
->>>>>>> ef771a7e1aa679eaff9f6fa4cc134bee673e7061
+![](Imagens/Tela%20de%20Aluguel.jpg)
+
+## MODELAGEM BANCO DE DADOS
+
+### DIAGRAMA CONCEITUAL
+![](Imagens/modelagem.conceitual.pi.jpg)
+
+### DIAGRAMA LOGICO
+![](Imagens/modelagem.logico.pi.jpg)
+
+
