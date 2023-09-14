@@ -4,20 +4,19 @@
 
 ### ÁREA NÃO LOGADA
 
-Visualização dos veículos disponíveis para locação (sem detalhes)
-Visualização dos planos disponíveis (semanal e mensal) 
-Resumo sobre a empresa 
-Cadastro de clientes
-Tela de vantagens de veículos elétricos
+- Visualização dos veículos disponíveis para locação (sem detalhes)
+- Visualização dos planos disponíveis (semanal e mensal) 
+- Resumo sobre a empresa 
+- Cadastro de clientes
+- Tela de vantagens de veículos elétricos
 
 ### ÁREA LOGADA
 
-Visualização das viaturas disponíveis para aluguer (Com mais detalhes) 
-Visualização dos planos disponíveis (semanal e mensal)
-Possibilidade de aluguel de viatura
-Resumo sobre a empresa
-Perfil do utilizador (Login, palavra-passe e informações adicionais no registo de cliente)
-<<<<<<< HEAD
+- Visualização das viaturas disponíveis para aluguer (Com mais detalhes) 
+- Visualização dos planos disponíveis (semanal e mensal)
+- Possibilidade de aluguel de viatura
+- Resumo sobre a empresa
+- Perfil do utilizador (Login, palavra-passe e informações adicionais no registo de cliente)
 
 
 ## PROTOTIPAÇÕES
@@ -39,6 +38,9 @@ Perfil do utilizador (Login, palavra-passe e informações adicionais no registo
 
 ### TELA DE ALUGUEL
 ![](Imagens/Tela%20de%20Aluguel.jpg)
+
+### TELA DE PLANOS
+![](Imagens/Planos.png)
 
 ## MODELAGEM BANCO DE DADOS
 
