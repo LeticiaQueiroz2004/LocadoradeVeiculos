@@ -1,9 +1,12 @@
 create database locadora_de_veiculos;
 use locadora_de_veiculos;
 create table usuario(
-login varchar(20) not null unique,
+id_usuario INT NOT NULL AUTO_INCREMENT,
+email VARCHAR(30) NOT NULL unique,
 senha VARCHAR(20) NOT NULL,
-PRIMARY KEY (login)
+fk_id_cliente int not null ,
+foreign key(fk_id_cliente) references cliente(id_cliente),
+PRIMARY KEY (id_usuario)
 );
 
 create table veiculos(
@@ -17,6 +20,7 @@ primary key (placa)
 );
 
 create table cliente(
+id_cliente INT NOT NULL AUTO_INCREMENT,
 cpf varchar(14) not null unique,
 nome VARCHAR(50) NOT NULL unique,
 telefone varchar(17) not null unique,
