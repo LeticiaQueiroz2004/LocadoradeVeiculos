@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    background-image: url("https://img.freepik.com/fotos-gratis/mulher-carregando-seu-carro-eletrico-com-pistola-de-carregamento_1303-31233.jpg?w=1060&t=st=1698279589~exp=1698280189~hmac=bb5800fbbf30f0b4a9d81c3a26c4031ebf3e4f94c2068b2e93352bd41a6bfaa7");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 800px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    background-color: rgb(255,255,255,0.7);
+    width: 800px;
+}
