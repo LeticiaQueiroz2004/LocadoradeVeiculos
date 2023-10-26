@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Planos de Aluguel de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .header-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-button {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .image-and-reason {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-and-reason img {
+            max-width: 100%;
+        }
+
+        .image-and-reason-text {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .planos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .plano {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "\2022";
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .select-button {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">ElectraRent</div>
+            <div class="menu">
+                <a href="#">Opções</a>
+                <a href="#">Planos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Aluguel de Carros</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="header-buttons">
+                <button class="header-button">Carros Disponíveis</button>
+                <button class="header-button">Cadastro</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-and-reason">
+        <div class="image-and-reason-text">
+            <h2>Por que assinar um plano de aluguel de carros?</h2>
+            <p>Economize e tenha benefícios exclusivos ao escolher um de nossos planos mensal ou semanal.</p>
+        </div>
+        <img src="img/imgPlanos.jpg" alt="Car Image">
+    </div>
+
+    <div class="planos">
+        <div class="plano">
+            <h2>Plano Mensal</h2>
+            <ul>
+                <li>Alugue um carro por um mês completo.</li>
+                <li>Preços especiais para locações de longa duração.</li>
+                <li>Manutenção e seguro incluídos no preço.</li>
+                <li>Opção de trocar de carro durante o mês.</li>
+            </ul>
+            <button class="select-button">Selecionar Plano</button>
+        </div>
+
+        <div class="plano">
+            <h2>Plano Semanal</h2>
+            <ul>
+                <li>Alugue um carro por uma semana completa.</li>
+                <li>Preços acessíveis para locações curtas.</li>
+                <li>Manutenção e seguro incluídos no preço.</li>
+                <li>Opção de escolher entre uma variedade de carros.</li>
+            </ul>
+            <button class="select-button">Selecionar Plano</button>
+        </div>
+    </div>
+</body>
+</html>
