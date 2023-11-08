@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    background-color: #E1E1E1;
+}
+
+.aluguelContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+
+    padding: 50px 0px 70px;
+}
+
+.detalhesCotacao, .detalhesCompra {
+    background-color: white;
+    height: 100%;
+    margin: 70px 10px 0px;
+    padding: 20px;
+}
+
+.detalhesCotacao {
+    width: 30%;
+}
+
+.detalhesCompra {
+    width: 65%;
+}
+
+.infoTitulo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #CB5555;
+    padding: 15px 0px;
+}
+
+.containerRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.DataRetDev, .local {
+    padding: 0px 10px;
+}
+
+.info2{
+    padding: 20px 0px 0px;
+}
+
+.cotacaoitem {
+    padding: 5px 0px;
+}
+
+.negrito {
+    color: #CB5555;
+    font-weight: bolder;
+}
