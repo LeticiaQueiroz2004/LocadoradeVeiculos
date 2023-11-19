@@ -1,67 +1,67 @@
-create database locadora_de_veiculos;
-use locadora_de_veiculos;
-create table usuario(
-id_usuario INT NOT NULL AUTO_INCREMENT,
-email VARCHAR(30) NOT NULL unique,
-senha VARCHAR(20) NOT NULL,
-fk_id_cliente int not null,
-foreign key(fk_id_cliente) references cliente(id_cliente),
-PRIMARY KEY (id_usuario)
+CREATE DATABASE locadora_de_veiculos;
+USE locadora_de_veiculos;
+
+CREATE TABLE Usuarios(
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(30) UNIQUE,
+    senha VARCHAR(20),
 );
 
-create table cliente(
-id_cliente INT NOT NULL AUTO_INCREMENT,
-cpf varchar(14) not null unique,
-nome VARCHAR(50) NOT NULL unique,
-telefone varchar(17) not null unique,
-nascimento date not null,
-endereço varchar(50),
-email VARCHAR(30) NOT NULL unique,
- primary key(id_cliente)
+
+CREATE TABLE Cliente(
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+    cpf VARCHAR(14) UNIQUE,
+    nome VARCHAR(50),
+    telefone VARCHAR(17),
+    nascimento DATE,
+    endereço VARCHAR(50),
+    email VARCHAR(30),
+    fk_usuario INT,
+    FOREIGN KEY(fk_usuario) REFERENCES Usuarios(id_usuario)
 );
 
-create table veiculo(
-id_veiculo INT NOT NULL AUTO_INCREMENT,
-modelo varchar(20) not null,
-placa varchar(7) not null unique,
-cor varchar (20) not null,
-vl_diaria decimal(15,2) not null,
-qtd_portas int not null,
-qtd_acentos int not null,
-KM int not null,
-primary key (id_veiculo)
+
+CREATE TABLE Car(
+    id_veiculo INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(20),
+    image VARCHAR(400),
+    placa VARCHAR(7) UNIQUE,
+    cor VARCHAR (20),
+    vl_diaria DECIMAL(15,2),
+    qtd_portas INT,
+    qtd_acentos INT,
+    KM_rodados INT
 );
 
-create table pagamento(
-id_pagamento INT NOT NULL AUTO_INCREMENT,
-descriçao varchar(50),
-primary key (id_pagamento)
+
+CREATE TABLE Pagamento(
+    id_pagamento INT PRIMARY KEY AUTO_INCREMENT,
+    descriçao VARCHAR(50),
 );
 
-create table aluguel(
-id_aluguel INT NOT NULL AUTO_INCREMENT, 
-nmr_vendedor varchar(10),
-dat_retirada date not null,
-dat_devoluçao date not null,
-vlr_total decimal(15,2),
-vlr_taxa decimal(15,2),
-pagamento int not null,
-fk_id_pagamento int not null,
-foreign key(fk_id_pagamento) references  pagamento(id_pagamento),
-fk_veiculo int not null,
-foreign key(fk_veiculo) references veiculo(id_veiculo),
-fk_cliente int not null,
-foreign key(fk_cliente) references cliente(id_cliente),
-primary key (id_aluguel)
+
+CREATE TABLE aluguel(
+    id_aluguel INT PRIMARY KEY AUTO_INCREMENT, 
+    nmr_vendedor VARCHAR(10),
+    dat_retirada DATE,
+    dat_devoluçao DATE,
+    vlr_total DECIMAL(15,2),
+    vlr_taxa DECIMAL(15,2),
+    pagamento INT,
+    fk_id_pagamento INT,
+    fk_veiculo INT,
+    fk_cliente INT,
+    FOREIGN KEY(fk_id_pagamento) REFERENCES  pagamento(id_pagamento),
+    FOREIGN KEY(fk_veiculo) REFERENCES veiculo(id_veiculo),
+    FOREIGN KEY(fk_cliente) REFERENCES cliente(id_cliente)
 );
 
-create table reserva_veiculo(
-fk_id_aluguel int not null unique,
-foreign key(fk_id_aluguel) references aluguel(id_aluguel),
-fk_pagamento int not null,
-foreign key(fk_pagamento) references aluguel(pagamento),
-fk_veiculo int not null,
-foreign key(fk_veiculo) references aluguel(fk_veiculo),
 
-primary key (fk_id_aluguel)
+CREATE TABLE reserva_veiculo(
+    fk_id_aluguel INT PRIMARY KEY AUTO_INCREMENT,
+    fk_pagamento INT,
+    fk_veiculo INT,
+    FOREIGN KEY(fk_id_aluguel) REFERENCES aluguel(id_aluguel),
+    FOREIGN KEY(fk_pagamento) REFERENCES aluguel(pagamento),
+    FOREIGN KEY(fk_veiculo) REFERENCES aluguel(fk_veiculo)
 );

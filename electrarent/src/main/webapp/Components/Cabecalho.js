@@ -14,14 +14,14 @@ function CriarCabecalho() {
     const menu = document.createElement("ul");
     menu.id = "menu";
 
-    const menuItems = [
-        { text: "Aluguel de Carros", targetPage: "../Aluguel/aluguel.html" },
+    const menuItemS = [
+        { text: "Aluguel de Carros", targetPage: "../Explorar/Explorar.html" },
         { text: "Planos", targetPage: "../Planos/plano.html"},
         { text: "Sobre", targetPage: "../Sobre/sobre.html" },
         { text: "FAQ", targetPage: "../FAQ/faq.html" }
     ];
 
-    menuItems.forEach((item) => {
+    menuItemS.forEach((item) => {
         const menuItem = document.createElement("li");
         const link = document.createElement("a");
         link.textContent = item.text;
@@ -36,10 +36,12 @@ function CriarCabecalho() {
     const button1 = document.createElement("a");
     button1.className = "botao1";
     button1.textContent = "Carros Disponíveis";
+    button1.href ="../Explorar/Explorar.html";
 
     const button2 = document.createElement("a");
     button2.className = "botao2";
     button2.textContent = "Cadastro";
+    button2.href="../Cadastro/Cadastro.html";
 
     buttons.appendChild(button1);
     buttons.appendChild(button2);

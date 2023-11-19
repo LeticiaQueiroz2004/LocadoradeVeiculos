@@ -70,7 +70,81 @@
 
 
             <div class="detalhesCompra">
-                <div> oi </div>
+                <div class="infoTitulo"> DETALHES DO CONDUTOR </div>
+                <form>
+                    <div class="wrap-input">
+						<input class="input-form" type="text" name="nome">
+						<span class="focus-input-form" data-placeholder="Nome Completo"></span>
+					</div>
+
+                    <div class="container-row">
+                        <div class="wrap-input">
+                            <input class="input-form" type="email" name="email" id="email">
+                            <span class="focus-input-form" data-placeholder="E-mail"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="text" name="nacionalidade" id="nacionalidade">
+                            <span class="focus-input-form" data-placeholder="Nacionalidade"></span>
+                        </div>
+                    </div>
+
+                    <div class="container-row">
+                        <div class="wrap-input">
+                            <input class="input-form" type="date" name="nasc" id="nasc">
+                            <span class="focus-input-form" data-placeholder=""></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="text" name="rg" id="rg">
+                            <span class="focus-input-form" data-placeholder="RG"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="text" name="cpf" id="cpf">
+                            <span class="focus-input-form" data-placeholder="CPF"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="telephone" name="Telefone" id="Telefone">
+                            <span class="focus-input-form" data-placeholder="Telefone"></span>
+                        </div>
+                    </div>
+                    <div class="infoTitulo"> Informações de endereçamento </div>
+                    <div class="wrap-input">
+                        <input class="input-form" type="text" name="ender" id="ender">
+                        <span class="focus-input-form" data-placeholder="Endereço"></span>
+                    </div>
+                    <div class="container-row">
+                        <div class="wrap-input">
+                            <input class="input-form" type="email" name="CEP">
+                            <span class="focus-input-form" data-placeholder="CEP"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="text" name="bairro">
+                            <span class="focus-input-form" data-placeholder="Bairro"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="email" name="cidade">
+                            <span class="focus-input-form" data-placeholder="Cidade"></span>
+                        </div>
+                        <div class="wrap-input">
+                            <input class="input-form" type="text" name="comp">
+                            <span class="focus-input-form" data-placeholder="Complemento/Nº da casa"></span>
+                        </div>
+                    </div>
+                    <form class="formaPagto">
+                        <div class="infoTitulo"> Formas de pagamento </div>
+                        <label> <input type="checkbox" name="formaPagamento" value="pix"> Pix </label>
+                        <label> <input type="checkbox" name="formaPagamento" value="cartaoCredito"> Cartão de Crédito  </label>
+                        <label> <input type="checkbox" name="formaPagamento" value="pagarNaRetirada"> Pagar na Retirada </label>
+                    </form>
+
+                    <div class="container-botao">
+                        <div class="cancelar">
+                            <button> Cancelar </button> 
+                        </div>
+                        <div class="finalizar"> 
+                            <button> Finalizar </button> 
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 	</div>

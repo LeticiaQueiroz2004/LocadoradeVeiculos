@@ -1,8 +1,8 @@
-body {
-    margin:0px;
+body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    background-color: #E1E1E1;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -51,13 +51,32 @@ body {
 
     font-size: 20px;
     font-weight: bolder;
-    padding: 15px 60px;
+    padding: 10px 60px;
     text-align: center;
     cursor: pointer;
     
 }
 
 .botao:hover button{
+    background-color: #ca5e5e;
+    transition: 0.3s;
+}
+
+.cancelar button {
+    background-color: #8b7878;
+    border: 1px solid #CB5555;
+    border-radius: 50px;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 60px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.cancelar:hover button{
     background-color: #ca5e5e;
     transition: 0.3s;
 }
@@ -86,4 +105,5 @@ body {
     align-items: center;
 
     padding: 100px 0px;
+    background-color: white;
 }

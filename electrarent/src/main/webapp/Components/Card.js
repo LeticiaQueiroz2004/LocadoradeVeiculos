@@ -26,11 +26,12 @@ const imagemUrl = [
                     "https://automegarenault.com.br/assets/uploads/nt_veiculos_cores/81401-Cores-Branco-polar.png?v=2", 
                     "https://www.nissan-cdn.net/content/dam/Nissan/br/site/veiculos/leaf-my23/thumbnails/leaf-2023-730px.png"];
 
-const modelos = ["BYD Han", 
-                "iCar", 
-                "Chevrolet Bold", 
-                "Renault Kwid E-Tech", 
-                "Nissan Leaf"];
+const modelos = [
+                    "BYD Han", 
+                    "iCar", 
+                    "Chevrolet Bold", 
+                    "Renault Kwid E-Tech", 
+                    "Nissan Leaf"];
 
 for (let i = 0; i < imagemUrl.length; i++) {
     CriarCard(imagemUrl[i], modelos[i]);
