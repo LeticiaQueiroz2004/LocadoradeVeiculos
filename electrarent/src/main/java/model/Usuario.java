@@ -9,7 +9,17 @@ public class Usuario {
     private String sobrenome;
 
 
-    public Usuario() {
+    public Usuario(String senha, String nome, String email, String telefone, String sobrenome) {
+        this.senha= senha;
+        this.nome= nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.sobrenome = sobrenome;
+    }
+
+    public Usuario(String senha, String email) {
+        this.senha= senha;
+        this.email = email;
     }
 
     public int getIdUsuario() {
