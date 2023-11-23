@@ -1,0 +1,205 @@
+/*  Cabeçalho */
+#cabecalho {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#logo {
+    padding: 0px 30px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#menu {
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 0px 10px;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    color:#CB5555;
+    cursor: pointer;
+}
+#botoes {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.botao1 {
+    background-color: #CB5555;
+    border: 1px solid #CB5555;
+    border-radius: 50px;
+    color: #fff;
+
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+.botao1:hover {
+    background-color: #c22b2b;
+    border: 1px solid #c22b2b;
+    transition: 0.3s;
+}
+
+.botao2 {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: #fff;
+
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    color:#CB5555;
+    cursor: pointer;
+}
+/* Rodape */
+.rodape {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo-rodape {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 0px 70px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.lista-funcionalidades {
+    text-align: left;
+    list-style:square;
+}
+
+.lista-funcionalidades li {
+    padding: 5px 0;
+}
+
+.funcionalidadeItem:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+    color:#CB5555;
+    cursor: pointer;
+}
+
+/*  Card */
+
+.card {
+    background-color: #fff;
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 200px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/*  Vantagens texto */
+.container-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 1000px;
+}
+
+.container-3 img {
+    width: 400px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container-texto {
+    width: 400px;
+    text-align: center;
+}
+
+.tituloVantagem {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.descricao {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/*  Card Planos */
+
+.plano {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.select-button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}

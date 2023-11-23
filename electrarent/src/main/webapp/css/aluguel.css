@@ -1,0 +1,196 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    background-color: #E1E1E1;
+}
+input, button {
+    outline: none !important;
+    border: none;
+}
+
+:root {
+    --main-color: #CB5555;
+    --link-color: #666666;
+    --text1: #999999;
+    --highligth-text: #333333;
+    --input-text: #555555;
+    --white-color: #FFFFFF;
+    --point-list: #CCCCCC;
+    --line-input: #D9D9D9;
+}
+
+.aluguelContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+
+    padding: 50px 0px 70px;
+}
+
+.detalhesCotacao, .detalhesCompra {
+    background-color: white;
+    height: 100%;
+    margin: 70px 10px 0px;
+    padding: 20px;
+}
+
+.detalhesCotacao {
+    width: 30%;
+}
+
+.detalhesCompra {
+    width: 65%;
+}
+
+.infoTitulo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #CB5555;
+    padding: 15px 0px;
+}
+
+.containerRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.DataRetDev, .local {
+    padding: 0px 10px;
+}
+
+.info2{
+    padding: 20px 0px 0px;
+}
+
+.cotacaoitem {
+    padding: 5px 0px;
+}
+
+.negrito {
+    color: #CB5555;
+    font-weight: bolder;
+}
+
+
+
+/* INPUTS */
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid var(--line-input);
+    margin: 20px 4px;
+}
+
+.input-form {
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    padding: 0 5px;
+}
+
+.focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input-form::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background: var(--main-color);
+}
+
+.focus-input-form::after {
+    font-size: 18px;
+    color: var(--text1);
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    padding-left: 5px;
+    transition: all 0.4s;
+}
+
+.input-form:focus + .focus-input-form::after, .has-val.input-form + .focus-input-form::after {
+    top: -20px;
+    font-size: 15px;
+}
+
+.input-form:focus + .focus-input-form::before, .has-val.input-form + .focus-input-form::before {
+    width: 100%;
+}
+
+.container-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.formaPagto {
+    padding: 20px 0px;
+}
+
+.container-botao{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+.finalizar button {
+    background-color: #CB5555;
+    border: 1px solid #CB5555;
+    border-radius: 50px;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 60px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.finalizar:hover button{
+    background-color: #ca5e5e;
+    transition: 0.3s;
+}
+
+.cancelar button {
+    background-color:#b6b4b4;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px 60px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.cancelar:hover button{
+    background-color: #686868;
+    transition: 0.3s;
+}
