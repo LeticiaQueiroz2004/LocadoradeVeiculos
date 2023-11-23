@@ -37,4 +37,36 @@ public class UserDAO {
        }
     }
 
+    public void Cadastro(User user){
+
+        String SQL = "INSERT INTO USUARIO( EMAIL, SENHA, PRIMEIRONOME, SOBRENOME, TELEFONE) VALUES(?,?,?,?,?)";
+
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getEmail());
+            preparedStatement.setString(2, user.getSenha());
+            preparedStatement.setString(3, user.getPrimeiroNome());
+            preparedStatement.setString(4, user.getSobrenome());
+            preparedStatement.setString(5, user.getTelefone());
+            preparedStatement.execute();
+
+            System.out.println("success a insert a user");
+
+            connection.close();
+
+        } catch (Exception e) {
+
+            System.out.println("fail in database connection");
+            System.out.println("Error: " + e.getMessage());
+
+        }
+
+    }
+
 }
