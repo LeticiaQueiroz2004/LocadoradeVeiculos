@@ -1,6 +1,6 @@
 package br.com.electrarent.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Aluguel {
     private int idAluguel;
@@ -59,7 +59,7 @@ public class Aluguel {
         return fkPagamento;
     }
 
-    public Date getDtAluguel() {
+    public java.sql.Date getDtAluguel() {
         return dtAluguel;
     }
 }
