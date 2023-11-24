@@ -14,7 +14,7 @@ import java.util.List;
 public class CarDAO {
     public void createCar(Car car) {
 
-        String SQL = "INSERT INTO CAR (NAME, IMAGE, PLACA, COR, VL_DIARIA, KM_RODADOS, QTD_PORTAS, QTD_ACENTOS) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO CAR (NAME, IMAGE, PLACA, COR, VLDIARIA, KMRODADOS, QTDPORTAS, QTDACENTOS, QTDDISPONIVEL) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
 
@@ -28,7 +28,7 @@ public class CarDAO {
             preparedStatement.setString(2, car.getImage());
             preparedStatement.setString(3,car.getPlaca());
             preparedStatement.setString(4, car.getCor());
-            preparedStatement.setDouble(5, car.getVDiary());
+            preparedStatement.setDouble(5, car.getVlDiaria());
             preparedStatement.setDouble(6, car.getKmRodados());
             preparedStatement.setInt(7, car.getQtdPortas());
             preparedStatement.setInt(8, car.getQtdAcentos());
@@ -66,8 +66,14 @@ public class CarDAO {
                 String carId = resultSet.getString("id");
                 String carName = resultSet.getString("name");
                 String image = resultSet.getString("image");
+                String placa = resultSet.getString("placa");
+                String cor = resultSet.getString("cor");
+                double vlDiaria = resultSet.getDouble("vlDiaria");
+                double kmRodados = resultSet.getDouble("kmRodados");
+                int qtdPortas = resultSet.getInt("qtdPortas");
+                int qtdAcentos = resultSet.getInt("qtdAcentos");
 
-                Car car = new Car(carId, carName, image);
+                Car car = new Car(carId, carName, image, placa, cor, vlDiaria, kmRodados, qtdPortas, qtdAcentos);
 
                 cars.add(car);
 
@@ -114,7 +120,7 @@ public class CarDAO {
 
     public void updateCar(Car car) {
 
-        String SQL = "UPDATE CAR SET NAME = ?,  IMAGE = ?, PLACA = ?, COR = ?, VL_DIARIA = ?, KM_RODADOS = ?, QTD_PORTAS = ?, QTD_ACENTOS = ? WHERE ID = ?";
+        String SQL = "UPDATE CAR SET NAME = ?,  IMAGE = ?, PLACA = ?, COR = ?, VLDIARIA = ?, KMRODADOS = ?, QTDPORTAS = ?, QTDACENTOS = ? WHERE ID = ?";
 
         try {
 
@@ -126,12 +132,13 @@ public class CarDAO {
             preparedStatement.setString(2, car.getImage());
             preparedStatement.setString(3,car.getPlaca());
             preparedStatement.setString(4, car.getCor());
-            preparedStatement.setDouble(5, car.getVDiary());
+            preparedStatement.setDouble(5, car.getVlDiaria());
             preparedStatement.setDouble(6, car.getKmRodados());
             preparedStatement.setInt(7, car.getQtdPortas());
             preparedStatement.setInt(8, car.getQtdAcentos());
             preparedStatement.setString(9, car.getId());
             preparedStatement.execute();
+
             System.out.println("success in update car");
 
             connection.close();

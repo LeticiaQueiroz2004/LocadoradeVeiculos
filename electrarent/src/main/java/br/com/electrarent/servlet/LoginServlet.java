@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("/admin/find-all-cars");
+            resp.sendRedirect("/");
 
         } else {
 

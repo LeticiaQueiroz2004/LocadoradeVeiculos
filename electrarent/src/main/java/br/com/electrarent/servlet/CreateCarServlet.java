@@ -38,7 +38,6 @@ public class CreateCarServlet extends HttpServlet {
         int carqtdPortas = Integer.parseInt(parameters.get("qtdPortas"));
         int carqtdAcentos = Integer.parseInt(parameters.get("qtdAcentos"));
 
-
         Car car = new Car(carId, carName, carImage, carPlaca, carCor, carvlDiaria, carkmRodados, carqtdPortas, carqtdAcentos);
         CarDAO carDAO = new CarDAO();
 

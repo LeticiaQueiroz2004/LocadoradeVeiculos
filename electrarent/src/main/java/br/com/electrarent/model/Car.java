@@ -15,6 +15,7 @@ public class Car {
     public Car(String name) {
         this.name = name;
     }
+
     public Car(String id, String name) {
         this.id = id;
         this.name = name;
@@ -51,7 +52,7 @@ public class Car {
     }
     public String getPlaca() {return placa;}
     public String getCor() {return cor;}
-    public double getVDiary() {return vlDiaria;}
+    public double getVlDiaria() {return vlDiaria;}
     public double getKmRodados() {return kmRodados;}
     public int getQtdPortas() {return qtdPortas;}
     public int getQtdAcentos() {return qtdAcentos;}

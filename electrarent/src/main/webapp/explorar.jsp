@@ -21,6 +21,23 @@
         <script src="/componentes/CardCarro.js"></script>
     </div>
 
+    <c:forEach var="car" items="${cars}">
+    <div class="cardCarro">
+        <h2>${car.name}</h2>
+        <img src="${car.image}" alt="${car.name} Image">
+        <div>Selecione abaixo:</div>
+        <select class="select" id="kmSelect">
+            <option value="1.000">1.000</option>
+            <option value="2.000">2.000</option>
+            <option value="3.000">3.000</option>
+            <option value="4.000">4.000</option>
+            <option value="5.000">5.000</option>
+            <option value="Mais">Mais</option>
+        </select>
+        <div>Diária a partir de: ${car.vlDiaria}</div>
+        <a class="alugar" href="/aluguel.jsp">Alugar esse</a>
+    </div>
+    </c:forEach>
 </div>
 <div id="rodape-container"></div>
 <script src="/componentes/Rodape.js"></script>

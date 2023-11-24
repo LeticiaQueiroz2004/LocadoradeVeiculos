@@ -18,7 +18,7 @@
 
                 <div class="wrap-input">
                     <input class="input-form" type="text" name="primeiroNome" id="primeiroNome">
-                    <span class="focus-input-form" data-placeholder="Primeiro noome"></span>
+                    <span class="focus-input-form" data-placeholder="Primeiro nome"></span>
                 </div>
 
                 <div class="wrap-input">

@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 @WebServlet("/Cadastro")
 public class CadastroServlet extends HttpServlet {
@@ -26,10 +29,12 @@ public class CadastroServlet extends HttpServlet {
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
 
-        User user = new User(primeiroNome,sobrenome, telefone, email, senha);
+        User user = new User(primeiroNome, sobrenome, telefone, email, senha);
 
         UserDAO userDAO = new UserDAO();
 
         userDAO.Cadastro(user);
+
+        req.getRequestDispatcher("/").forward(req, resp);
     }
 }

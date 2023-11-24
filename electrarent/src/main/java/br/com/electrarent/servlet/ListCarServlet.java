@@ -21,12 +21,10 @@ public class ListCarServlet extends HttpServlet {
 
         req.setAttribute("cars", cars);
 
-        if(req.getSession().getAttribute("loggedUser") != null) {
+        if (req.getSession().getAttribute("loggedUser") != null) {
             req.getRequestDispatcher("/admin/dashboard.jsp").forward(req, resp);
         } else {
             req.getRequestDispatcher("/index.jsp").forward(req, resp);
         }
-
     }
-
 }

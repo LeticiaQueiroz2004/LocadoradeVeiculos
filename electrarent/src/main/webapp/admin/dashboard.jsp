@@ -50,7 +50,7 @@
                             <a class="nav-link" aria-current="page" href="/admin/find-all-cars"><span data-feather="home" class="align-text-bottom"></span> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin/"><span data-feather="file-text" class="align-text-bottom"></span> New Car</a>
+                            <a class="nav-link" href="/admin/"><span data-feather="file-text" class="align-text-bottom"></span> Novo Veículo </a>
                         </li>
                     </ul>
 
@@ -61,11 +61,14 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
                 <div class="table-responsive">
-                    <h1>Cars</h1>
+                    <h1>Veiculos cadastrados</h1>
                     <table class="table table-striped table-sm">
                         <tr>
+                            <th></th>
                             <th>ID</th>
                             <th>Name</th>
+                            <th>Valor Diária</th>
+                            <th>Qtd. Disponível </th>
                             <c:if test="${sessionScope.loggedUser != null}">
                                 <th>Actions</th>
                             </c:if>
@@ -75,6 +78,8 @@
                                 <td></td>
                                 <td>${car.id}</td>
                                 <td>${car.name}</td>
+                                <td>${car.vlDiaria}</td>
+
                                 <td>
                                     <c:if test="${sessionScope.loggedUser != null}">
                                         <form action="/delete-car" method="post">
@@ -85,6 +90,24 @@
                                     </c:if>
                                 </td>
                             </tr>
+                        </c:forEach>
+
+                        <c:forEach var="car" items="${cars}">
+                            <div class="cardCarro">
+                                <h2>${car.name}</h2>
+                                <img src="${car.image}" alt="${car.name} Image">
+                                <div>Selecione abaixo:</div>
+                                <select class="select" id="kmSelect">
+                                    <option value="1.000">1.000</option>
+                                    <option value="2.000">2.000</option>
+                                    <option value="3.000">3.000</option>
+                                    <option value="4.000">4.000</option>
+                                    <option value="5.000">5.000</option>
+                                    <option value="Mais">Mais</option>
+                                </select>
+                                <div>Diária a partir de: ${car.vlDiaria}</div>
+                                <a class="alugar" href="/aluguel.jsp">Alugar esse</a>
+                            </div>
                         </c:forEach>
                     </table>
                 </div>

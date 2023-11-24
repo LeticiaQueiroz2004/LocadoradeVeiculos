@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/aluguel.css">
     <link rel="icon" type="shorticon" href="https://img.freepik.com/vetores-premium/compre-o-compartilhamento-de-compra-ou-o-logotipo-do-carro-alugado-com-o-negociante-de-carros-de-icones-planos-da-as-chaves-ao-comprador-ilustracao-vetorial-isolada_108855-3539.jpg?w=360"/>
-    <link rel="stylesheet" href="/css/StyleComponents.css">
+    <link rel="stylesheet" href="/css/StyleComponentes.css">
 </head>
 <body>
 
@@ -29,8 +29,7 @@
                         </div>
                         <div class="containerRow">
                             <div> <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/19618691-icone-de-de-calendario-vetor.jpg" width="20"/> </div>
-                            <div class="DataRetDev"> 13/09/2023 às 14h00 </div>
-                            <div> <img src="https://us.123rf.com/450wm/get4net/get4net2201/get4net220111420/180476257-caneta-de-escrit%C3%B3rio-de-escrita-isolada-em-um-fundo-branco.jpg?ver=6" width="20"/> </div>
+                            <input class="input-form" type="date" name="retirada" id="retirada">
                         </div>
                     </div>
                     <div> <b> Devolução </b> </div>
@@ -41,8 +40,7 @@
                         </div>
                         <div class="containerRow">
                             <div> <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/19618691-icone-de-de-calendario-vetor.jpg" width="20"/> </div>
-                            <div class="DataRetDev"> 13/09/2023 às 14h00 </div>
-                            <div> <img src="https://us.123rf.com/450wm/get4net/get4net2201/get4net220111420/180476257-caneta-de-escrit%C3%B3rio-de-escrita-isolada-em-um-fundo-branco.jpg?ver=6" width="20"/> </div>
+                            <input class="input-form" type="date" name="devolucao" id="devolucao">
                         </div>
                     </div>
                 </div>
@@ -65,15 +63,11 @@
                 </div>
             </div>
 
-
-
-
-
             <div class="detalhesCompra">
                 <div class="infoTitulo"> DETALHES DO CONDUTOR </div>
-                <form>
+                <form action="/Aluguel" method="post">
                     <div class="wrap-input">
-                        <input class="input-form" type="text" name="nome">
+                        <input class="input-form" type="text" name="nome" id="nome">
                         <span class="focus-input-form" data-placeholder="Nome Completo"></span>
                     </div>
 
@@ -90,7 +84,7 @@
 
                     <div class="container-row">
                         <div class="wrap-input">
-                            <input class="input-form" type="date" name="nasc" id="nasc">
+                            <input class="input-form" type="date" name="nascimento" id="nascimento">
                             <span class="focus-input-form" data-placeholder=""></span>
                         </div>
                         <div class="wrap-input">
@@ -102,30 +96,30 @@
                             <span class="focus-input-form" data-placeholder="CPF"></span>
                         </div>
                         <div class="wrap-input">
-                            <input class="input-form" type="telephone" name="Telefone" id="Telefone">
-                            <span class="focus-input-form" data-placeholder="Telefone"></span>
+                            <input class="input-form" type="telephone" name="telefone" id="telefone">
+                            <span class="focus-input-form" data-placeholder="telefone"></span>
                         </div>
                     </div>
                     <div class="infoTitulo"> Informações de endereçamento </div>
                     <div class="wrap-input">
-                        <input class="input-form" type="text" name="ender" id="ender">
+                        <input class="input-form" type="text" name="endereco" id="endereco">
                         <span class="focus-input-form" data-placeholder="Endereço"></span>
                     </div>
                     <div class="container-row">
                         <div class="wrap-input">
-                            <input class="input-form" type="email" name="CEP">
+                            <input class="input-form" type="text" name="cep" id="cep">
                             <span class="focus-input-form" data-placeholder="CEP"></span>
                         </div>
                         <div class="wrap-input">
-                            <input class="input-form" type="text" name="bairro">
+                            <input class="input-form" type="text" name="bairro" id="bairro">
                             <span class="focus-input-form" data-placeholder="Bairro"></span>
                         </div>
                         <div class="wrap-input">
-                            <input class="input-form" type="email" name="cidade">
+                            <input class="input-form" type="email" name="cidade" id="cidade">
                             <span class="focus-input-form" data-placeholder="Cidade"></span>
                         </div>
                         <div class="wrap-input">
-                            <input class="input-form" type="text" name="comp">
+                            <input class="input-form" type="text" name="complemento" id="complemento">
                             <span class="focus-input-form" data-placeholder="Complemento/Nº da casa"></span>
                         </div>
                     </div>
@@ -141,7 +135,7 @@
                             <button> Cancelar </button>
                         </div>
                         <div class="finalizar">
-                            <button> Finalizar </button>
+                            <button type="submit"> Finalizar </button>
                         </div>
                     </div>
                 </form>

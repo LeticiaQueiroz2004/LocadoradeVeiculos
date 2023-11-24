@@ -10,18 +10,18 @@
         <link href="/webjars/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">ElectraRent</a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="/logout">Sair</a>
+        <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">ElectraRent</a>
+            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+            <div class="navbar-nav">
+                <div class="nav-item text-nowrap">
+                    <a class="nav-link px-3" href="/logout">Sair</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
         <div class="container-fluid">
             <div class="row">
@@ -72,37 +72,39 @@
 
                                 <div class="mb-3">
                                     <label class="form-label" for="vlDiaria">Valor Diária</label>
-                                    <input class="form-control" type="text" name="vlDiaria" id="vlDiaria" value="${param.vlDiaria}">
+                                    <input class="form-control" type="number" name="vlDiaria" id="vlDiaria" value="${param.vlDiaria}">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="kmRodados">KM Rodados </label>
-                                    <input class="form-control" type="text" name="kmRodados" id="kmRodados" value="${param.kmRodados}">
+                                    <input class="form-control" type="number" name="kmRodados" id="kmRodados" value="${param.kmRodados}">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="qtdPortas">Qtd. portas</label>
-                                    <input class="form-control" type="text" name="qtdPortas" id="qtdPortas" value="${param.qtdPortas}">
+                                    <input class="form-control" type="number" name="qtdPortas" id="qtdPortas" value="${param.qtdPortas}">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="qtdAcentos">Qtd. Acentos </label>
-                                    <input class="form-control" type="text" name="qtdAcentos" id="qtdAcentos" value="${param.qtdAcentos}">
+                                    <input class="form-control" type="number" name="qtdAcentos" id="qtdAcentos" value="${param.qtdAcentos}">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label"> Image </label>
-                                    <input class="form-control" type="file" name="image" id="image">
+                                    <input class="form-control" type="file" name="image" id="image" value="${param.image}">
                                 </div>
+
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
                         </div>
                     </main>
-                <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-                <script src="../js/feather.min.js"></script>
-                <script src="../js/dashboard.js"></script>
+
+                    <script src="http://localhost:8080/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                    <script src="../js/feather.min.js"></script>
+                    <script src="../js/dashboard.js"></script>
             </div>
         </div>
     </body>

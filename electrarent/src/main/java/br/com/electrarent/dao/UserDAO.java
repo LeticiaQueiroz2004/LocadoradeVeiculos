@@ -6,35 +6,35 @@ import java.sql.*;
 
 public class UserDAO {
     public boolean VerifyCredentials(User user){
-       String SQL = "SELECT * FROM USUARIO WHERE EMAIL = ?";
+        String SQL = "SELECT * FROM USUARIO WHERE EMAIL = ?";
 
-       try {
-           Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
-           System.out.println("success in database connection");
+            System.out.println("success in database connection");
 
-           PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-           preparedStatement.setString(1, user.getEmail());
-           ResultSet resultSet = preparedStatement.executeQuery();
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.setString(1, user.getEmail());
+            ResultSet resultSet = preparedStatement.executeQuery();
 
-           System.out.println("success in select username");
+            System.out.println("success in select username");
 
-           while (resultSet.next()){
-               String senha = resultSet.getString("senha");
+            while (resultSet.next()){
+                String senha = resultSet.getString("senha");
 
-               if(senha.equals(user.getSenha())) {
-                   return true;
-               }
-           }
+                if(senha.equals(user.getSenha())) {
+                    return true;
+                }
+            }
 
-           connection.close();
+            connection.close();
 
-           return false;
+            return false;
 
-       }catch (Exception e) {
-           System.out.println("Error: " + e.getMessage());
-           return false;
-       }
+        }catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            return false;
+        }
     }
 
     public void Cadastro(User user){
