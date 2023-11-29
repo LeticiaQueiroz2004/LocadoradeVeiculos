@@ -39,7 +39,7 @@ public class UserDAO {
 
     public void Cadastro(User user){
 
-        String SQL = "INSERT INTO USUARIO( EMAIL, SENHA, PRIMEIRONOME, SOBRENOME, TELEFONE) VALUES(?,?,?,?,?)";
+        String SQL = "INSERT INTO USUARIO( EMAIL, SENHA, NOME, SOBRENOME, TELEFONE) VALUES(?,?,?,?,?)";
 
         try {
 
